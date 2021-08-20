@@ -4,8 +4,8 @@
 block_cipher = None
 
 
-a = Analysis(['main.py'],
-             pathex=['/home/mr_earle/Desktop/PyinstallerTest/src'],
+a = Analysis(['src\\main.py'],
+             pathex=['D:\\Desktop\\PyinstallerTest'],
              binaries=[],
              datas=[],
              hiddenimports=[],
