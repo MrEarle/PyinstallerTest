@@ -1,4 +1,4 @@
 src/dist/*
-!**/.gitkeep
+!*/.gitkeep
 build/
 __pycache__/
