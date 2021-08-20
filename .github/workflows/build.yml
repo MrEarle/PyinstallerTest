@@ -8,7 +8,7 @@ on:
 env:
   SOURCEDIR: src
   APPNAME: main # Cambiar por el nombre de la app
-  PYTHONFILENAME: main.py
+  PYTHONFILENAME: main.py # Cambiar por el archivo que se quiere compilar
 
 jobs:
   buildWindows:
@@ -24,7 +24,7 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.APPNAME }}
+        name: ${{ env.APPNAME }}_windows
         path: ${{ env.SOURCEDIR }}/dist/windows # or path/to/artifact
   
   buildMacOs:
@@ -50,6 +50,6 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.APPNAME }}
+        name: ${{ env.APPNAME }}_macos
         path: ${{ env.SOURCEDIR }}/dist/macos # or path/to/artifact
 
